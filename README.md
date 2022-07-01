@@ -5,6 +5,8 @@ Bot generates sharable link inside telegram for documents and make files public 
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/7rAFMH?referralCode=0QUBiS)
+
 ## required details 
 
 <code>TOKEN</code> - Get bot token from bot father
