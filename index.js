@@ -76,7 +76,7 @@ bot.command('/help',(ctx)=>{
         parse_mode:'HTML',
         reply_markup:{
             inline_keyboard:[
-                [{text: '💬 Support 💬',url:'t.me/DevelopedBotz'}]
+                [{text: '💬 Support 💬',url:'t.me/ToonEncodes}]
             ]
         }    
     })
