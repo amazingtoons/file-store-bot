@@ -37,6 +37,13 @@ bot.start(async(ctx)=>{
 
     if(length == 1){
         ctx.reply(`<b>It's File Store Bot Of ToonEncodes. Anyone Can Use Bot For Free. It will store files for you and give sharable links .</b>`,{
+            parse_mode:'HTML',
+            reply_markup:{
+                inline_keyboard:[
+                    [{text: '📢 Channel 📢', url: 't.me/ToonEncodes}]
+                ]
+            }
+        })
             
     }else{
         file = await saver.getFile(query).then((res)=>{
@@ -66,6 +73,13 @@ bot.action('POP',(ctx)=>{
 //help
 
 bot.command('/help',(ctx)=>{
+    parse_mode:'HTML',
+            reply_markup:{
+                inline_keyboard:[
+                    [{text: '📢 Channel 📢', url: 't.me/ToonEncodes}]
+                ]
+            }
+        })
     ctx.reply(`Hello <b>${ctx.from.first_name}</b> you can send me files and i will store and share link for that file to be used inside telegram\n\nYou can also use me for searching files contributed by various users`,{
         
     if(ctx.from.id==process.env.ADMIN){
